@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Birthday Surprise</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff4b91,#8e44ad,#4facfe);
+overflow:hidden;
+}
+
+.lock{
+background:rgba(255,255,255,.15);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+text-align:center;
+width:90%;
+max-width:330px;
+color:white;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:20px 0;
+border:none;
+border-radius:10px;
+font-size:18px;
+text-align:center;
+}
+
+button{
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff2d75;
+font-size:18px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="lock">
+
+<h1>🔒 Birthday Lock</h1>
+
+<p>Enter Password</p>
+
+<input type="password" id="pass">
+
+<button onclick="check()">Unlock ❤️</button>
+
+</div>
+
+<script>
+
+function check(){
+
+let p=document.getElementById("pass").value;
+
+if(p=="0911"){
+
+alert("Password Correct ❤️");
+
+}else{
+
+alert("Wrong Password");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>if(p=="0911"){
+
+document.body.innerHTML=`
+
+<div style="
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(135deg,#ff4b91,#8e44ad,#4facfe);
+color:white;
+text-align:center;
+padding:20px;
+">
+
+<h1 style="font-size:42px;">🎉 Happy Birthday Falak ❤️</
